@@ -1,0 +1,15 @@
+class Task {
+  int userId;
+  int id;
+  String title;
+  bool completed;
+
+  Task({this.userId, this.id, this.title, this.completed});
+
+  Task.fromJson(Map<String, dynamic> json) {
+    userId = json['userId'];
+    id = json['id'];
+    title = json['title'];
+    completed = json['completed'];
+  }
+}
